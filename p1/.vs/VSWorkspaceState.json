@@ -1,0 +1,15 @@
+{
+  "ExpandedNodes": [
+    "",
+    "\\project-p1-main",
+    "\\project-p1-main\\aspnet",
+    "\\project-p1-main\\aspnet\\PizzaBox.Domain",
+    "\\project-p1-main\\aspnet\\PizzaBox.Storing",
+    "\\project-p1-main\\aspnet\\PizzaBox.WebClient",
+    "\\project-p1-main\\aspnet\\PizzaBox.WebClient\\bin",
+    "\\project-p1-main\\aspnet\\PizzaBox.WebClient\\Controllers",
+    "\\project-p1-main\\aspnet\\PizzaBox.WebClient\\Models",
+    "\\project-p1-main\\aspnet\\PizzaBox.WebClient\\Views"
+  ],
+  "PreviewInSolutionExplorer": false
+}

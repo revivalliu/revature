@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+
+  <html lang="en" >
+
+  <head>
+    <title> Order Success</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+
+    <style>
+      body {
+        background-color: lightblue;
+      }
+      h2 {
+        position: absolute;
+        left: 700px;
+        top: 15px;
+      }
+      tr {
+        font-size: large;
+      }
+
+      label {
+        color: darkgreen;
+        font-family: Consolas, Baskerville, 'Segoe UI', sans-serif;
+        font-size: x-large;
+      }
+
+      input[type=radio]:hover {
+        box-shadow: 0px 0px 10px #1300ff;
+      }
+    </style>
+  </head>
+  <body class="container">
+
+    <main class="row">
+      <section class="row">
+        <div class="row">
+          <header class="page-header">
+            <h2> Featured Pizzas</h2>
+          </header>
+        </div>
+
+        <ul class="row">
+          <li class="col-md-4">
+            <figure class="figure">
+              <img class="figure-img img-fluid" src="https://i.pinimg.com/originals/83/b4/2e/83b42e6102716facf2e919b4f20a5686.jpg" alt="round cheesy pizza">
+              <figcaption class="figure-caption"> MeatLover Pizza</figcaption>
+            </figure>
+          </li>
+          <li class="col-md-4">
+            <figure>
+              <img class="img-fluid" src="https://tastesbetterfromscratch.com/wp-content/uploads/2020/08/Veggie-Pizza-2.jpg" alt="square carnivore pizza">
+              <figcaption class="figure-caption"> Healthy Veggie Pizza</figcaption>
+            </figure>
+          </li>
+          <li class="col-md-4">
+            <figure>
+              <img class="img-fluid" src="https://www.queensleeappetit.com/wp-content/uploads/2019/02/Meat-Lovers-Pizza-3.jpg" alt="chocolate cookie pizza">
+              <figcaption class="figure-caption"> Customized Pizza</figcaption>
+            </figure>
+          </li>
+        </ul>
+      </section>
+
+      <section class="row">
+
+        <div class="row">
+          <form action="">
+            <h3> Pick a Store</h3>
+            <input type="radio" name="store" id="store001" value="PizzaHut">
+            <label for="store001"> PizzaHut</label>
+            <input type="radio" name="store" id="store002" value="Domino">
+            <label for="store002"> Domino</label>
+            <input type="radio" name="store" id="store003" value="RoundTable">
+            <label for="store003"> RoundTable</label>
+
+            <!--            <h3> Pick Pizzas</h3>
+   <input type="checkbox" name="pizzas" id="pizza001" value="meat">
+   <label for="pizza001"> Meat Pizza</label>
+   <input type="checkbox" name="pizzas" id="pizza002" value="veggie">
+   <label for="pizza002"> Veggie Pizza</label>
+   <input type="checkbox" name="pizzas" id="pizza003" value="customized">
+   <label for="pizza003"> GlutenFree Pizza</label>
+   <input type="checkbox" name="pizzas" id="pizza004" value="vg">
+   <label for="pizza004"> Vegan Pizza</label>
+   <input type="checkbox" name="pizzas" id="pizza005" value="seafood">
+   <label for="pizza005"> Seafood Pizza</label>
+  -->
+            <h3> Make an order</h3>
+            <label for="name"> Name</label>
+            <input type="text" name="name" id="name" placeholder="Yichen">
+            <label for="city"> City</label>
+            <input type="text" name="city" id="city" placeholder="San Jose">
+
+            <label for="state"> State</label>
+            <select name="state" id="state">
+              <option value="None" selected> None</option>
+              <option value="TX"> Texas</option>
+              <option value="RI"> Rhode Island</option>
+              <option value="MI"> Michigan</option>
+              <option value="NY"> New York</option>
+              <option value="HI"> Hawaii</option>
+            </select>
+            <table id="pr">
+              <tbody onload="">
+                <tr class="thd">
+                  <th>Meat Pizza -- $12</th>
+                  <th>Veggie Pizza -- $11</th>
+                  <th>Customized Pizza -- $13</th>
+                  <th>  Total Price</th>
+                </tr>
+
+                <tr>
+                  <td><input type="text" class="fin" onkeyup="update();" /></td>
+                  <td><input type="text" class="fin" onkeyup="update();" /></td>
+                  <td><input type="text" class="fin" onkeyup="update();" /></td>
+                  <td input type="text" class="fin" name="totdeduction"></td>
+                </tr>
+
+              </tbody>
+            </table>
+            <br />
+            <br />
+
+            <script>
+              function update() {
+                var j = document.getElementById("pr").rows[1].cells[0].getElementsByTagName("input")[0].value;
+                var k = parseInt(j);
+                if (isNaN(k)) { k = 0 }
+                var l = document.getElementById("pr").rows[1].cells[1].getElementsByTagName("input")[0].value;
+                var m = parseInt(l);
+                if (isNaN(m)) { m = 0 }
+                var a = document.getElementById("pr").rows[1].cells[2].getElementsByTagName("input")[0].value;
+                var b = parseInt(a);
+                if (isNaN(b)) { b = 0 }
+                var n = (k * 12 + m * 11 + b * 13);
+                document.getElementById("pr").rows[1].cells[3].innerHTML = n;
+                //localStorage.clear();
+                localStorage.setItem("price", n);
+                localStorage.setItem("name", document.getElementById("name").value);
+                find_store();
+              }
+            </script>
+            <button type="submit" asp-action="success"> PlaceOrder</button>
+            <button type="reset"> Cancel Order</button>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <script>
+      
+      function find_store() {
+        
+        var radios = document.getElementsByName("store");
+
+        for (var i = 0, length = radios.length; i < length; i++) {
+          if (radios[i].checked) {
+            // do whatever you want with the checked radio
+            //alert(radios[i].value);
+            localStorage.setItem("store", radios[i].value);
+            // only one radio can be logically checked, don't check the rest
+            break;
+          }
+        }
+
+        //save radio
+        
+        localStorage.setItem("name", document.getElementById("name").value);
+        
+      }
+
+      function export2txt() {
+        const originalData = {
+          orders: [{
+            Name: "Yichen",
+            State: "Ta"
+          },
+          {
+            name: "ted",
+            age: "42"
+          },
+          {
+            name: "bob",
+            age: "12"
+          }
+          ]
+        };
+
+        const a = document.createElement("a");
+        a.href = URL.createObjectURL(new Blob([JSON.stringify(originalData, null, 2)], {
+          type: "text/plain"
+        }));
+        a.setAttribute("download", "data.txt");
+        document.body.appendChild(a);
+        a.click();
+        document.body.removeChild(a);
+      }
+    </script>
+      </body >
+
+      </html >

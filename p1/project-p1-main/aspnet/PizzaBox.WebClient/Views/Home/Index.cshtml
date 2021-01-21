@@ -1,0 +1,49 @@
+<head>
+  <title>Order Success</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <style>
+    .bg-cover {
+      background-attachment: static;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+  </style>
+</head>
+@{
+    ViewData["Title"] = "Home Page";
+}
+
+<!--<section class="text-center">
+  <h1 class="display-4">Welcome To Yichen's Pizza Box!</h1>
+
+
+  <p>
+    <h5>Are you a customer or a store?</h5>
+  </p>
+
+  <a asp-controller="customer" asp-action="home" class="btn btn-primary">Customer</a>
+  <a asp-controller="store" asp-action="home" class="btn btn-secondary">Store</a>
+  </p>
+</section>
+-->
+<div class="row">
+
+  <div class="col-md-6">
+    <h2>Tasty pizzas</h2>
+    <div class="jumbotron bg-cover" style="    background-image: linear-gradient(to bottom, rgba(255,255,255,0.6) 0%,rgba(255,255,255,0.9) 100%), url(https://th.bing.com/th/id/OIP.xHJjheJtqrCqZiMnFDFruAHaDt?pid=Api&rs=1)">
+      <div class="container">
+        <h1 class="display-4">Welcome To Yichen's Pizza Box!</h1>
+        <p class="lead">Are you a customer or a store?</p>
+        <hr class="my-4">
+        <a asp-controller="customer" asp-action="home" class="btn btn-primary">Customer</a>
+        <a asp-controller="store" asp-action="home" class="btn btn-secondary">Store</a>
+      </div>
+      <!-- /.container   -->
+    </div>
+  </div>

@@ -1,0 +1,16 @@
+C:\Users\Peishan\Desktop\p1\project-p1-main\aspnet\PizzaBox.LocalClient\bin\Debug\net5.0\PizzaBox.LocalClient.exe
+C:\Users\Peishan\Desktop\p1\project-p1-main\aspnet\PizzaBox.LocalClient\bin\Debug\net5.0\PizzaBox.LocalClient.deps.json
+C:\Users\Peishan\Desktop\p1\project-p1-main\aspnet\PizzaBox.LocalClient\bin\Debug\net5.0\PizzaBox.LocalClient.runtimeconfig.json
+C:\Users\Peishan\Desktop\p1\project-p1-main\aspnet\PizzaBox.LocalClient\bin\Debug\net5.0\PizzaBox.LocalClient.runtimeconfig.dev.json
+C:\Users\Peishan\Desktop\p1\project-p1-main\aspnet\PizzaBox.LocalClient\bin\Debug\net5.0\PizzaBox.LocalClient.dll
+C:\Users\Peishan\Desktop\p1\project-p1-main\aspnet\PizzaBox.LocalClient\bin\Debug\net5.0\ref\PizzaBox.LocalClient.dll
+C:\Users\Peishan\Desktop\p1\project-p1-main\aspnet\PizzaBox.LocalClient\bin\Debug\net5.0\PizzaBox.LocalClient.pdb
+C:\Users\Peishan\Desktop\p1\project-p1-main\aspnet\PizzaBox.LocalClient\obj\Debug\net5.0\PizzaBox.LocalClient.csprojAssemblyReference.cache
+C:\Users\Peishan\Desktop\p1\project-p1-main\aspnet\PizzaBox.LocalClient\obj\Debug\net5.0\PizzaBox.LocalClient.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Peishan\Desktop\p1\project-p1-main\aspnet\PizzaBox.LocalClient\obj\Debug\net5.0\PizzaBox.LocalClient.AssemblyInfoInputs.cache
+C:\Users\Peishan\Desktop\p1\project-p1-main\aspnet\PizzaBox.LocalClient\obj\Debug\net5.0\PizzaBox.LocalClient.AssemblyInfo.cs
+C:\Users\Peishan\Desktop\p1\project-p1-main\aspnet\PizzaBox.LocalClient\obj\Debug\net5.0\PizzaBox.LocalClient.csproj.CoreCompileInputs.cache
+C:\Users\Peishan\Desktop\p1\project-p1-main\aspnet\PizzaBox.LocalClient\obj\Debug\net5.0\PizzaBox.LocalClient.dll
+C:\Users\Peishan\Desktop\p1\project-p1-main\aspnet\PizzaBox.LocalClient\obj\Debug\net5.0\ref\PizzaBox.LocalClient.dll
+C:\Users\Peishan\Desktop\p1\project-p1-main\aspnet\PizzaBox.LocalClient\obj\Debug\net5.0\PizzaBox.LocalClient.pdb
+C:\Users\Peishan\Desktop\p1\project-p1-main\aspnet\PizzaBox.LocalClient\obj\Debug\net5.0\PizzaBox.LocalClient.genruntimeconfig.cache

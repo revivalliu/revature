@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Order Success</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</head>
+<body>
+
+  <div class="jumbotron text-center">
+    <h1>Thank you for your oder.</h1>
+    <h4>Order info.</h4>
+    <p>
+      Name:
+      <script>
+        document.write(localStorage.getItem("name"));
+      </script>
+    </p>
+    <p>
+      Store:
+      <script>
+        document.write(localStorage.getItem("store"));
+      </script>
+    </p>
+
+    <p>
+      Order price:
+      <script>
+        document.write(localStorage.getItem("price"));
+      </script>
+    </p>
+
+    <p>Your order has been placed successfully. Please click HERE to go back. </p>
+
+    <div>
+      <a asp-action="home">Click here to make another order.</a>
+    </div>
+
+  </div>
+
+        <script>
+          var store = localStorage.getItem("store"));
+          var name = localStorage.getItem("name"));
+          var price = localStorage.getItem("price"));
+
+    </script>
+
+</body >
+</html >
