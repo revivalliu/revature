@@ -1,0 +1,16 @@
+{
+  "ExpandedNodes": [
+    "",
+    "\\project-p0",
+    "\\project-p0\\PizzaBox.Client",
+    "\\project-p0\\PizzaBox.Domain",
+    "\\project-p0\\PizzaBox.Domain\\Factories",
+    "\\project-p0\\PizzaBox.Domain\\Models",
+    "\\project-p0\\PizzaBox.Domain\\Singletons",
+    "\\project-p0\\PizzaBox.Storing",
+    "\\project-p0\\PizzaBox.Storing\\Migrations",
+    "\\project-p0\\PizzaWorld.Testing"
+  ],
+  "SelectedNode": "\\project-p0\\PizzaBox.Domain\\Models\\Topping.cs",
+  "PreviewInSolutionExplorer": false
+}
